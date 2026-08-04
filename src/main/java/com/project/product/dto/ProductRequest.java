@@ -1,18 +1,15 @@
-package com.project.product.entity;
+package com.project.product.dto;
 
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Entity
-@Data
-@NoArgsConstructor
+@Setter
 @AllArgsConstructor
-public class Product {
-    private Long id;
+@NoArgsConstructor
+public class ProductRequest {
     private String name;
     private String description;
     private BigDecimal price;
